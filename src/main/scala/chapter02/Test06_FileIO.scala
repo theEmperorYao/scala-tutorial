@@ -2,6 +2,8 @@ package chapter02
 
 import java.io.{File, PrintWriter}
 import scala.io.Source
+import scala.runtime.Nothing$
+import scala.xml.Null
 
 /**
  * @Classname Test06_FileIO
@@ -22,6 +24,10 @@ object Test06_FileIO {
 
     writer.write("hello scala from java writer ")
     writer.close()
+
+    val a = null
+
+    println(a)
 
 
   }
